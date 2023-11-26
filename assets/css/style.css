@@ -26,6 +26,13 @@ body {
     padding: 0;
     margin: 0;
 }
+section {
+    background: rgba(0, 0, 0, 0.8);
+}
+footer{
+    background: rgba(0, 0, 0, .9);
+
+}
 /*  ================= Common ================ */
 .heading-box {
     padding: 80px 0;
@@ -34,7 +41,6 @@ body {
 }
 .sub-heading {
     margin: 0 auto;
-
     color: #a2aab1;
     font-family: var(--title-font-family);
     font-size: 10rem;
@@ -45,7 +51,7 @@ body {
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 122%;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     margin-bottom: 12px;
 }
 .heading-h3 {
@@ -55,7 +61,7 @@ body {
     line-height: 1.11;
 }
 .desc {
-    max-width: 870px;
+    /* max-width: 950px; */
     margin: 0 auto;
     color: var(--text-color);
     font-size: 1.6rem;
@@ -65,6 +71,7 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
 }
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background-color: var(--primary-color);
@@ -78,7 +85,10 @@ body {
     left: 0;
     z-index: 9999;
     border-bottom: 3px solid var(--secondary-color);
-    background: rgba(0, 0, 0, 0.68);
+    background: rgba(0, 0, 0, 0.67);
+}
+.header .brand-title {
+    font-family: var(--title-font-family);
 }
 .navbar-brand .brand-img {
     width: 100px;
@@ -108,30 +118,71 @@ body {
 }
 
 /*  ================= Hero ================ */
-.hero {
-    position: relative;
-    top: -97px;
-    height: 920px;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-}
+
 .hero .video-background {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    top: -97px;
     min-width: 100%;
     min-height: 100%;
     z-index: -1000;
 }
+
 .navbar-toggler {
     background-color: var(--primary-color);
 }
 .navbar-toggler:hover {
     background-color: var(--text-color);
 }
+
 /* =================== about ================= */
+.about .heading-box{
+    padding: 350px 0;
+}
+.about .desc{
+    display: grid;
+  place-items: center;
+}
+.desc .line-1,
+.desc .line-2,
+.desc .line-3 {
+    display: fixed;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.heading-box .desc .line-1{
+    animation: animated-text-line1 5s steps(1000, end) 2s 1 normal both;
+    -webkit-animation: animated-text-line1 5s steps(1000, end) 2s 1 normal both;
+}
+.desc .line-2,
+.desc .line-3{
+    animation: animated-text 5s steps(1000, end) 2s 1 normal both;
+    -webkit-animation: animated-text 5s steps(1000, end) 2s 1 normal both;
+}
+.desc .line-2 {
+    animation-delay: 5s;
+}
+.desc .line-3 {
+    animation-delay: 10s;
+}
+
+/* The typing effect */
+@keyframes animated-text {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes animated-text-line1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
 
 /*  ================= Hero ================ */
 
@@ -180,7 +231,9 @@ body {
     background-color: var(--secondary-color);
 }
 /*  ================= services ================ */
-
+ .services .show{
+    padding-bottom: 80px;
+ } 
 .thumbnailBox {
     position: relative;
     max-width: 320px;
@@ -249,7 +302,7 @@ body {
     background-position: bottom center;
     background-attachment: fixed;
     position: relative;
-    margin-top: 80px;
+
 }
 
 .price .heading-box .sub-heading {
@@ -265,7 +318,7 @@ body {
 }
 .price-contentBox {
     margin: 0 auto;
-    padding-bottom: 130px;
+    padding-bottom: 230px;
 }
 .price-contentBox .contentBox-item {
     border-radius: 20px;
@@ -312,13 +365,13 @@ body {
     color: #0d0d0d;
 }
 .price-descBox {
-    width: 500px;
+    width: 510px;
     padding: 10px 30px;
     border-radius: 14px;
     border: 3px dashed var(--primary-color);
     background: #0d0d0d;
     position: absolute;
-    bottom: -50px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -337,8 +390,8 @@ body {
     color: var(--text-color);
     font-size: 1.5rem;
     font-style: italic;
-        padding: 10px 0;
-        line-height: 1.75;
+    padding: 10px 0;
+    line-height: 1.75;
 }
 .price-descBox .price-descBox_content a {
     color: #d9ba75;
@@ -358,7 +411,7 @@ body {
 }
 .gallety-content img {
     width: 100%;
-    height: 800px;
+    height: 600px;
 }
 .owl-carousel-gallery .item img {
     border: 1px solid var(--primary-color);
@@ -407,11 +460,11 @@ body {
 .contact .map iframe {
     width: 100%;
     height: 800px;
-     border: 3px solid #caaa63;
+    border: 3px solid #caaa63;
 }
 /*  ================= Footer ================ */
 .footer {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .footer-box {
     width: 70%;
@@ -475,27 +528,24 @@ body {
     top: 96px;
 }
 
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+  
 /*===========================  */
 /* Responsive */
 @media screen and (min-width: 1900px) {
-    .hero {
-        top: 0;
-        height: 915px;
-    }
 }
 @media screen and (max-width: 1500px) {
-    .hero {
-        top: 0;
-        height: 830px;
-    }
     .scpop__item img {
         max-height: 80%;
     }
 }
 @media screen and (max-width: 1499px) and (min-width: 1050px) {
-    .hero {
-        height: 680px;
-    }
 }
 @media screen and (max-width: 1200px) {
     .navbar-brand .brand-title {
@@ -516,9 +566,6 @@ body {
     }
 }
 @media screen and (max-width: 1049px) and (min-width: 993px) {
-    .hero {
-        height: 580px;
-    }
     .navbar .nav-item .nav-link {
         font-size: 1.8rem;
     }
@@ -540,17 +587,11 @@ body {
     }
 }
 @media screen and (max-width: 992px) and (min-width: 862px) {
-    .hero {
-        height: 520px;
-    }
     .navbar-brand .brand-img {
         width: 65px;
     }
 }
 @media screen and (max-width: 861px) and (min-width: 767px) {
-    .hero {
-        height: 450px;
-    }
 }
 /*  ============  max-width: 768px ================   */
 
@@ -575,9 +616,6 @@ body {
     }
 }
 @media screen and (max-width: 766px) and (min-width: 577px) {
-    .hero {
-        height: 350px;
-    }
 }
 /*  ============  max-width: 576px ================   */
 @media screen and (max-width: 576px) {

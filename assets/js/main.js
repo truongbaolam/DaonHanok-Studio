@@ -1,21 +1,25 @@
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("#mainNav li");
 window.onscroll = () => {
-  var current = "";
+    var current = "";
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+        }
+    });
 
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
-    }
-  });
+    navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+            li.classList.add("active");
+        }
+    });
 };
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  }, false);
 //  ------------------------owl-carousel ----------------------------
 $(".owl-carousel-info").owlCarousel({
     loop: true,
@@ -29,7 +33,7 @@ $(".owl-carousel-info").owlCarousel({
         500: {
             items: 1,
         },
-         400: {
+        400: {
             items: 1,
         },
         280: {
@@ -60,9 +64,8 @@ $(".owl-carousel-gallery").owlCarousel({
     },
 });
 //  ------------------------owl-carousel ----------------------------
-    window.addEventListener('load', function(){
-    scpopLoad('.myLightBox');
-    scpopLoad('.myLightBox-1');
-    scpopLoad('.myLightBox-2');
-
-    });
+window.addEventListener("load", function () {
+    scpopLoad(".myLightBox");
+    scpopLoad(".myLightBox-1");
+    scpopLoad(".myLightBox-2");
+});
