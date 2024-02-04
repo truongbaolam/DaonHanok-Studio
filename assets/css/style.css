@@ -703,7 +703,13 @@ footer{
         font-size: 0.8rem;
     }
 }
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 385px) {
+       .desc {
+        font-size: 0.35em;
+    }
+    .desc strong{
+        font-size: 0.7rem;
+    }
     .heading-h3 {
         font-size: 2.6rem;
     }
