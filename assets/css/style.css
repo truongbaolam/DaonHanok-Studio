@@ -538,15 +538,13 @@ footer{
   
 /*===========================  */
 /* Responsive */
-@media screen and (min-width: 1900px) {
-}
+
 @media screen and (max-width: 1500px) {
     .scpop__item img {
         max-height: 80%;
     }
 }
-@media screen and (max-width: 1499px) and (min-width: 1050px) {
-}
+
 @media screen and (max-width: 1200px) {
     .navbar-brand .brand-title {
         font-size: 4rem;
@@ -572,18 +570,14 @@ footer{
 }
 /*  ============  max-width: 992px ================   */
 @media screen and (max-width: 991px) {
-    .price-contentBox .contentBox-item_content {
-        font-size: 2.8rem;
+    .about .heading-box{
+        padding: 200px 0;
     }
-    .price-descBox .price-descBox_content,
-    .price-descBox .price-descBox_desc {
-        font-size: 1.3rem;
+    .desc{
+        font-size: 1.1rem;
     }
-    .contact .map iframe {
-        height: 600px;
-    }
-    .sub-heading {
-        font-size: 8rem;
+    .gallety-content img{
+        max-height: 335px;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 862px) {
@@ -591,11 +585,11 @@ footer{
         width: 65px;
     }
 }
-@media screen and (max-width: 861px) and (min-width: 767px) {
-}
+
 /*  ============  max-width: 768px ================   */
 
 @media screen and (max-width: 768px) {
+    
     .sub-heading {
         font-size: 8.5rem;
     }
@@ -619,9 +613,7 @@ footer{
 }
 /*  ============  max-width: 576px ================   */
 @media screen and (max-width: 576px) {
-    .hero {
-        height: 300px;
-    }
+
     .navbar-brand .brand-img {
         width: 60px;
     }
@@ -677,104 +669,5 @@ footer{
 
     .marginBottom_fix {
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .hero {
-        height: 190px;
-        width: 380px;
-    }
-    .navbar-brand .brand-title {
-        font-size: 3rem;
-    }
-    .navbar-brand .brand-title {
-        font-size: 1rem;
-    }
-    .navbar-brand .brand-img {
-        width: 30px;
-    }
-    .sub-heading {
-        font-size: 4rem;
-    }
-    .heading {
-        font-size: 2.7rem;
-        margin-top: -17px;
-    }
-    .desc {
-        font-size: 0.65rem;
-    }
-    .desc strong {
-        font-size: 0.9rem;
-    }
-    .heading-box {
-        padding-bottom: 40px;
-    }
-    .heading-h3 {
-        font-size: 1.8rem;
-    }
-    .info ul li {
-        font-size: 0.65rem;
-        padding: 10px 0;
-    }
-    .info .info-img {
-        height: 300px;
-    }
-    .thumbnailBox-desc {
-        font-size: 1.1rem;
-    }
-    /* .price {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 0%;
-        margin-top: 0;
-    } */
-    .price-contentBox,
-    .price-descBox {
-        width: 230px;
-    }
-    .price-contentBox .contentBox-item_title,
-    .price-descBox .price-descBox_time,
-    .price-descBox .price-descBox_content {
-        font-size: 1rem;
-    }
-    .price-contentBox .contentBox-item_content,
-    .price-descBox .price-descBox_content a {
-        font-size: 1.3rem;
-    }
-
-    .price-contentBox .contentBox-item_price {
-        padding: 0;
-        font-size: 1.8rem;
-    }
-    .price-contentBox .contentBox-item_desc {
-        padding: 10px;
-        font-size: 1rem;
-    }
-    .price-descBox .price-descBox_desc {
-        font-size: 0.7rem;
-    }
-    .price-contentBox {
-        padding-bottom: 100px;
-    }
-    .price-descBox {
-        bottom: -56px;
-    }
-    .gallety-content img {
-        height: 370px;
-    }
-    .owl-theme .owl-dots .owl-dot span {
-        width: 8px;
-        height: 8px;
-    }
-    .contact__items p,
-    .contact__items a {
-        font-size: 1.1rem;
-    }
-}
-@media screen and (max-width: 280px) {
-    .hero {
-        height: 165px;
-        width: 280px;
     }
 }
